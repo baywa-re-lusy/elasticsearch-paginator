@@ -1,0 +1,23 @@
+{
+  "name": "baywa-re-lusy/elasticsearch-paginator",
+  "description": "BayWa r.e. ElasticSearch Paginator",
+  "type": "library",
+  "license": "proprietary",
+  "homepage": "https://baywa-re.com",
+  "config": {
+    "process-timeout": 5000,
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.5",
+    "squizlabs/php_codesniffer": "^3.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "BayWaReLusy\\ElasticSearchPaginator\\": "src/ElasticSearchPaginator"
+    }
+  }
+}

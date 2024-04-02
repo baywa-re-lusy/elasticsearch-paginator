@@ -10,7 +10,7 @@
   },
   "require": {
     "php": ">=8.2",
-    "laminas/laminas-paginator": "^2.15"
+    "laminas/laminas-paginator": "^2.18"
   },
   "require-dev": {
     "phpstan/phpstan": "^1.5",

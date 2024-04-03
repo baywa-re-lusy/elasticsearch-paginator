@@ -4,9 +4,15 @@ namespace BayWaReLusy\ElasticSearchPaginator;
 
 class ElasticSearchQuery
 {
+    /** @var array<string, mixed> */
     protected array $query = [];
+    /** @var array<string, mixed> */
     protected array $sort = [];
 
+    /**
+     * @param array<string, mixed> $query
+     * @param array<string, mixed> $sort
+     */
     public function __construct(array $query, array $sort = [])
     {
         $this->query = $query;
@@ -14,7 +20,7 @@ class ElasticSearchQuery
     }
 
     /**
-     * @return array
+     * @return array<string, mixed>
      */
     public function getQuery(): array
     {
@@ -22,7 +28,7 @@ class ElasticSearchQuery
     }
 
     /**
-     * @return array
+     * @return array<string, mixed>
      */
     public function getSort(): array
     {

@@ -39,6 +39,11 @@ class ElasticSearchAdapter implements AdapterInterface
         return $this;
     }
 
+    /**
+     * @param $offset
+     * @param $itemCountPerPage
+     * @return ElasticSearchEntityInterface[]
+     */
     public function getItems($offset, $itemCountPerPage): array
     {
         $page = ($offset / $itemCountPerPage) + 1;

@@ -20,7 +20,7 @@ jobs:
         auth:
           username: ${ACR_LOGIN_PD}
           password: ${ACR_PASSWORD_PD}
-    resource_class: large
+    resource_class: small
     working_directory: /var/www/html
     steps:
       - run:
@@ -45,7 +45,7 @@ jobs:
           username: ${ACR_LOGIN_PD}
           password: ${ACR_PASSWORD_PD}
     working_directory: /var/www/html
-    resource_class: large
+    resource_class: small
     steps:
       - attach_workspace:
           at: /var/www/html
@@ -70,7 +70,7 @@ jobs:
         auth:
           username: ${ACR_LOGIN_PD}
           password: ${ACR_PASSWORD_PD}
-    resource_class: large
+    resource_class: small
     working_directory: /var/www/html
     steps:
       - attach_workspace:

@@ -31,6 +31,8 @@ interface ElasticSearchMapperInterface
     public function getIndexName(): string;
 
     /**
+     * Create/Replace the given entities.
+     *
      * @param ElasticSearchEntityInterface[] $entities
      * @return void
      */

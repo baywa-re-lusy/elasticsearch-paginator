@@ -29,4 +29,10 @@ interface ElasticSearchMapperInterface
      * @return string
      */
     public function getIndexName(): string;
+
+    /**
+     * @param ElasticSearchEntityInterface[] $entities
+     * @return void
+     */
+    public function createOrReplaceInIndex(array $entities): void;
 }

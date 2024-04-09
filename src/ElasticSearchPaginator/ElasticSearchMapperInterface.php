@@ -37,10 +37,10 @@ interface ElasticSearchMapperInterface
      * @param ElasticSearchIndexRefreshMode $refreshMode If 'true', refresh index immediately. If 'false', return
      *                                                   without refreshing. If 'waitFor', wait for next refresh before
      *                                                   returning.
-     * @return ElasticSearchEntityInterface
+     * @return void
      */
     public function createOrReplaceInIndex(
         array $entities,
         ElasticSearchIndexRefreshMode $refreshMode = ElasticSearchIndexRefreshMode::false
-    ): ElasticSearchEntityInterface;
+    ): void;
 }
